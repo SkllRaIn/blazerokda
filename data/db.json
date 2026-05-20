@@ -1,0 +1,193 @@
+{
+  "config": {
+    "companyName": "АС-Авто",
+    "primaryColor": "#059669",
+    "accentColor": "#fbbf24",
+    "bgColor": "#ffffff",
+    "phone": "+7 (817) 200-00-00",
+    "email": "info@as-auto.ru",
+    "workHours": "Пн-Вс: 09:00 - 20:00",
+    "billingProvider": "yookassa",
+    "billingKeys": {
+      "shopId": "10034509",
+      "secretKey": "test_secret_key_abcdef123456"
+    },
+    "smtpHost": "smtp.yandex.ru",
+    "smtpPort": 465,
+    "smtpUser": "notification@as-auto.ru",
+    "smtpPass": "password123",
+    "smsProvider": "smsc",
+    "smsLogin": "as_auto_sms",
+    "smsPassword": "smspass123",
+    "isAdminCreated": true,
+    "isInstalled": true
+  },
+  "branches": [
+    {
+      "id": "br_1",
+      "name": "Центральный филиал",
+      "address": "г. Вологда, ул. Чернышевского, д. 120",
+      "phone": "+7 (817) 211-11-11",
+      "email": "branch1@as-auto.ru",
+      "hours": "Пн-Вс: 09:00 - 20:00",
+      "lat": 59.2312,
+      "lng": 39.8812,
+      "isActive": true
+    }
+  ],
+  "services": [
+    {
+      "id": "srv_1",
+      "category": "Диагностика",
+      "name": "Компьютерная диагностика",
+      "price": 1200,
+      "duration": 30,
+      "description": "Полное сканирование узлов",
+      "icon": "Cpu",
+      "isActive": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "srv_2",
+      "category": "Диагностика",
+      "name": "Диагностика подвески",
+      "price": 600,
+      "duration": 20,
+      "description": "Контроль люфтов и износа",
+      "icon": "Gauge",
+      "isActive": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "srv_3",
+      "category": "ТО",
+      "name": "Замена масла и фильтров",
+      "price": 2500,
+      "duration": 40,
+      "description": "Регламентная замена моторного масла",
+      "icon": "Droplet",
+      "isActive": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "srv_4",
+      "category": "Ремонт",
+      "name": "Замена тормозных колодок",
+      "price": 1000,
+      "duration": 40,
+      "description": "Замена колодок передней оси",
+      "icon": "Wrench",
+      "isActive": true,
+      "sortOrder": 4
+    }
+  ],
+  "bookings": [
+    {
+      "id": "АС-20260520-ABC1",
+      "branchId": "br1",
+      "serviceId": "srv1",
+      "date": "2026-05-20",
+      "time": "10:00",
+      "carMake": "Ford",
+      "carModel": "Focus",
+      "carYear": "2018",
+      "clientName": "Игорь Петров",
+      "clientPhone": "+7 (911) 500-11-22",
+      "clientEmail": "skilrainkk@gmail.com",
+      "prepaymentOption": "30",
+      "status": "confirmed",
+      "amount": 1200,
+      "prepaidAmount": 360,
+      "paymentStatus": "paid",
+      "paymentId": "payment_test_100203",
+      "createdAt": "2026-05-20T10:15:00.000Z"
+    },
+    {
+      "id": "АС-20260521-XYZ2",
+      "branchId": "br2",
+      "serviceId": "srv3",
+      "date": "2026-05-21",
+      "time": "14:30",
+      "carMake": "Hyundai",
+      "carModel": "Creta",
+      "carYear": "2020",
+      "clientName": "Мария Смирнова",
+      "clientPhone": "+7 (921) 716-44-55",
+      "clientEmail": "mariya.sm@gmail.com",
+      "prepaymentOption": "100",
+      "status": "pending",
+      "amount": 2500,
+      "prepaidAmount": 0,
+      "paymentStatus": "unpaid",
+      "createdAt": "2026-05-20T12:30:00.000Z"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "prop1",
+      "title": "Скидка 15% на первое посещение",
+      "description": "Запишитесь на любую услугу в любой филиал и получите скидку 15% на стоимость работ по промокоду FIRST15.",
+      "discountType": "percent",
+      "discountValue": 15,
+      "promoCode": "FIRST15",
+      "expiryDateStr": "2026-12-31",
+      "isActive": true
+    },
+    {
+      "id": "prop2",
+      "title": "Бесплатный осмотр подвески при замене масла",
+      "description": "При заказе регламентного ТО (замена моторного масла и фильтров), комплексная диагностика подвески проводится бесплатно!",
+      "discountType": "fixed",
+      "discountValue": 600,
+      "promoCode": "FREECHECK",
+      "expiryDateStr": "2026-08-31",
+      "isActive": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev1",
+      "clientName": "Сергей В.",
+      "rating": 5,
+      "text": "Отличный сервис! Менял передние стойки и колодки на Фокусе. Сделали за полтора часа, дали дельные советы по ремням. Цены адекватные, буду обращаться еще.",
+      "date": "2026-05-18",
+      "isApproved": true,
+      "replyText": "Спасибо за отзыв, Сергей! Всегда рады помочь вашему автомобилю."
+    },
+    {
+      "id": "rev2",
+      "clientName": "Алексей Кириллов",
+      "rating": 5,
+      "text": "Проходил компьютерную диагностику двигателя. Мастер подробно объяснил по графикам работы форсунок, выявили пропуски зажигания в 3 цилиндре. Заменили катушку на месте, чек погас. Все профессионально.",
+      "date": "2026-05-15",
+      "isApproved": true
+    },
+    {
+      "id": "rev3",
+      "clientName": "Дмитрий Н.",
+      "rating": 4,
+      "text": "Хороший шиномонтаж, оперативно переобулся. Загрузка большая, пришлось подождать минут 10 своего времени, но сделали на совесть. Балансировка отличная.",
+      "date": "2026-05-10",
+      "isApproved": true,
+      "replyText": "Дмитрий, благодарим за обратную связь. Приносим извинения за небольшую задержку, стараемся соблюдать график максимально точно."
+    }
+  ],
+  "admins": [
+    {
+      "username": "admin",
+      "email": "skilrainkk@gmail.com",
+      "passwordHash": "8974a683dcdc79d4b7386c58dabfeff49ac77835dd57341a8ea6dba62e008d63",
+      "role": "admin"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_bed1aa6cc639",
+      "email": "skilrainkk@gmail.com",
+      "passwordHash": "8974a683dcdc79d4b7386c58dabfeff49ac77835dd57341a8ea6dba62e008d63",
+      "fullName": "Комиссаров К А",
+      "phone": "+79517345538",
+      "createdAt": "2026-05-20T19:50:20.972Z"
+    }
+  ]
+}
